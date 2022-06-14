@@ -1,0 +1,91 @@
+<!--pages/details/details.wxml-->
+<view class="top">
+<view class="title">猫眼电影> 神奇动物:邓布利多之谜</view>
+<!-- 封面 -->
+<view class="fm">
+<view class="fm-img">
+<image src="./img/fm-1.png"></image>
+</view>
+<view class="fm-title">
+<h1>神奇动物:邓布利多之谜</h1>
+<view class="fm-title-introduce">
+<view class="introduce">Fantastic Beasts:The Secrets of D</view>
+<view class="introduce">奇幻/冒险/剧情<image src="./img/2D IMAX.png"></image></view>
+<view class="introduce">埃迪·雷德梅尼/凯瑟琳·沃特斯顿/科林·法瑞尔 </view>
+<view class="introduce">2022-04-08中国大陆上映/143分钟</view>
+<view class="but"><a href="#">想看</a></view>
+<view class="but"><a href="#">看过</a></view>
+</view>
+</view>
+</view>
+<!-- 评分 -->
+<view class="ratings">
+<view class="ratings-top">
+
+<view class="ratings-top-text1">
+  <image src="./img/icon.png"></image>
+猫眼购票评分
+</view>
+<view class="ratings-top-text1">
+347,734的人想看
+</view>
+<view class="ratings-top-text1">
+947,734的人看过
+</view>
+</view>
+<view class="ratings-bnt">
+<image src="img/pf-1.png"></image>
+</view>
+</view>
+<!-- 简介 -->
+<view class="briefly">
+<view class="briefly-title">简介<text>展开></text></view>
+<view class="briefly-text">阿不思·邓布利多教授（裘德·洛 饰）意识到强大的黑巫师盖勒特·格林德沃（麦斯·米科尔森 饰）正试图夺取魔法世界的控制权。邓布利多了解仅凭他一人之力，将无法阻止格林德沃，于是他委托魔法动物学家纽特·斯卡曼德（埃迪·雷德梅恩 饰）带领一支精良的团队——成员包括男巫、女巫及一位勇敢的麻瓜面包师，来共同执行这项危险任务。一路上他们会遇到各式各样的神奇动物，既有老朋友，也有前所未见的神秘生物；同时他们也随时会与格林德沃不断壮大的追随者发生冲突。这次行动的风险是如此之高……邓布利多还能袖手旁观多久？</view>
+</view>
+<!-- 演员 -->
+<view class="actor-title">简介<text>全部></text></view>
+<view class="actor">
+
+<scroll-view scroll-x="true">
+  <view wx:for="{{rx}}"><image src="{{item.src}}"></image><text class="fm-text">{{item.name}}</text>{{item.posts}}</view>
+</scroll-view>
+  </view> 
+<!-- 推荐 -->
+<view class="referral-title">视频推荐<text>全部></text></view>
+<view class="referral">
+  <scroll-view scroll-x="true">
+    <view wx:for="{{tj}}"><image src="{{item}}"></image></view>
+
+</scroll-view></view>
+<!-- 剧照 -->
+<view class="Still-title">剧照<text>全部></text></view>
+<view class="Still">
+  <scroll-view scroll-x="true">
+  <view wx:for="{{jz}}"><image src="{{item}}"></image></view>
+</scroll-view></view>
+</view>
+<!-- 下半部分评论 -->
+<view class="back">
+<view class="bottom">
+<h2>短评</h2>
+<view wx:for="{{list}}"  class="con">
+<!-- 头像 -->
+<view class="avatar">
+<image src="{{item.src}}"></image>
+</view>
+<!-- 内容 -->
+<view class="content">
+  <view class="avatar-name">
+    {{item.name}}<text>Lv{{item.lv}}</text>
+<view>{{item.fs}}<a class="left" href="#">购票</a><a class="right" href="#">👍点赞</a></view>
+</view>
+<view class="avatar-msg">
+<view class="pl">{{item.pl}}</view>
+<view class="avatar-time">
+  <text>{{item.time}}</text><a href="#">{{item.count}}回复</a>
+</view>
+</view>
+</view>
+</view>
+</view>
+</view>

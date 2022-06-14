@@ -1,0 +1,293 @@
+/* pages/details/details.wxss */
+.top{
+ background-color: #19402c;
+ width: 100%;
+
+}
+.title{
+  padding-top: 14px;
+  padding-left: 12px;
+  color:#ccc;
+  font-size: 17px;
+}
+.fm{
+  width: 100%;
+
+  display: flex;
+height: 175px;
+}
+.fm-img{
+
+  flex: 1;
+text-align: center;
+}
+
+.fm-img image{
+  padding-left: 8px;
+padding-top: 20px;
+height: 120px;
+width: 96px;
+}
+
+.fm-title{
+  padding-top: 20px;
+
+  flex: 2;
+  padding-left: 12px;
+}
+.fm-title h1{
+color: white;
+
+}
+.fm-title-introduce{
+  padding-top: 8px;
+  width: 100%;
+}
+.introduce{
+  height: 20px;
+
+  -webkit-line-clamp:1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  vertical-align: middle; 
+  color: #ccc;
+  font-size: 12px;  
+}
+.introduce image{
+  padding-left: 10px;
+  vertical-align: middle;   
+  height: 19px;
+  width: 36px;
+  
+}
+.fm-title-introduce .but {
+  padding-top: 2px;
+  text-align: center;
+  background-color: #688275;
+  margin-right: 4px;
+  width: 95px;
+  height: 28px;
+display: inline-block;
+border-radius: 5px;
+color:white;
+  
+}
+.fm-title-introduce .but a{
+
+ 
+}
+.ratings{
+  width: 88%;
+  height: 127px;
+  margin: 0 auto;
+  background-color: #0b3120;
+  border-radius: 12px;
+  display: flex;
+  flex-direction:column;
+}
+.ratings-top{
+  flex: 1;
+
+}
+
+.ratings-top-text1{
+  padding-top:18px ;
+  padding-left: 4px;
+vertical-align:middle;
+display: inline-block;
+color: white;
+font-size: 14px;
+width: 30%;
+}
+.ratings-top-text1 image{
+ 
+  height: 20px;
+  width: 20px;
+  vertical-align:middle;
+}
+
+.ratings-bnt{
+  flex: 1;
+
+ 
+}
+.ratings-bnt image{
+  height: 64px;
+  width: 100%;
+}
+.briefly{
+padding-left: 12px;
+  height: 125px;
+  color: white;
+}
+.briefly-title{
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.briefly-title text{
+  float: right;
+}
+.briefly-text{
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+}
+
+.actor{
+
+  height: 166px;
+  width: 100%;
+  white-space:nowrap;
+}
+.actor-title,.referral-title,.Still-title{
+  padding-left: 12px;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+
+
+}
+.actor-title text,.referral-title text,.Still-title text{
+  float: right;
+
+}
+.actor view{
+  padding-left: 6px;
+  text-align: center;
+  z-index: -99;
+  height: 20px;
+  width: 80px;
+  display: inline-block;
+ color: #CCC;
+
+}
+.actor image{
+  height: 100px;
+  width: 80px;
+}
+.fm-text{
+
+ display: block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size: 16px;
+  font-weight:800;
+  color: white;
+}
+.referral,.Still{
+  height: 90px;
+  width: 100%;
+  white-space:nowrap;
+}
+.referral view,.Still view{
+  padding-left: 20px;
+  height: 90px;
+  width: 180px;
+  display: inline-block;
+}
+.referral view image,.Still view image{
+  height: 90px;
+  width: 180px;
+}
+
+.back{
+  padding-top: 12px;
+  background-color: #19402c;
+  width: 100%;
+ 
+}
+.bottom{
+  padding-top: 12px;
+  background-color: white;
+  border-radius: 12px;
+width: 100%;
+
+ }
+ .bottom h2{
+
+   padding-left: 12px;
+ }
+ .con{
+
+   display: flex;
+   margin: 0 auto;
+   width: 90%;
+   height: 180px;
+border-bottom: 1px solid #ccc;
+ }
+ .avatar{
+   flex: 1;
+
+ }
+ .avatar image{
+  float: right;
+   height: 47px;
+   width: 47px;
+ }
+ .content{
+  flex: 4;
+
+ display: flex;
+ flex-direction:column;
+
+ }
+ .avatar-name{
+
+   flex: 1;
+ }
+ .avatar-name .left{
+   margin-left: 6px;
+   background-color: white;
+   border-radius: 6px;
+   color:#76a3c4;
+   border:1px solid #76a3c4;
+ }
+ .right{
+  background-color: white;
+  border-radius: 6px;
+   float: right;
+   margin-right: 10px;
+   color:#ccc;
+   border:1px solid  #ccc;
+   font-size: 18px;
+   margin-bottom: 5px;
+ }
+ .avatar-name text{
+   padding-left: 5px;
+   font-size: 12px;
+   font-weight: 700;
+ }
+ .avatar-msg{
+
+  flex: 3;
+}
+.pl{
+  height: 92px;
+  -webkit-line-clamp:4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding: 2px 2px 2px 2px;
+
+  font-size: 18px;
+
+}
+.avatar-time{
+  margin-top: 2px;
+  margin-left: 4px;
+}
+.avatar-time a{
+  margin-left: 4px;
+  background-color: #eef1f6;
+  border-radius: 6px;
+   margin-right: 10px;
+   color:#7f88a6;
+   border:#ccc;
+   font-size: 18px;
+   margin-bottom: 5px;
+}

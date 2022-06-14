@@ -1,0 +1,7 @@
+
+<view class="flex-a" wx:for="{{fm_list}}">
+<image src="{{item.shareInfo.img}}" style="height: 100%;width: 100%;"></image>
+<view class="title">{{item.title}}</view>
+<view class="title-bo"><image src="{{item.user.avatarurl}}" ></image>{{item.user.nickName}}<view class="upCount" style="display:inline-block ;">👍{{item.upCount}}</view></view>
+</view>
+

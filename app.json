@@ -1,0 +1,69 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/movies/movies",
+    "pages/smovies/smovies",
+    "pages/ticket/ticket",
+    "pages/logs/logs",
+    "pages/me/me",
+    "pages/details/details"
+  
+    
+  ],
+  "window":{
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#e54847",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle":"white"
+  },
+
+  
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#f03d37",
+    "borderStyle": "black",
+    "list": [
+  
+      {
+        "selectedIconPath": "/images/1-2.png",
+        "iconPath": "/images/1.png",
+        "pagePath": "pages/index/index",
+        "text": "电影/影院"
+      },
+      {
+        "selectedIconPath": "/images/2-2.png",
+        "iconPath": "/images/2.png",
+        "pagePath": "pages/movies/movies",
+        "text": "轮播"
+      },
+      {
+        "selectedIconPath": "/images/3-2.png",
+        "iconPath": "/images/3.png",
+        "pagePath": "pages/smovies/smovies",
+        "text": "小视频"
+      },
+      {
+        "selectedIconPath": "/images/4-2.png",
+        "iconPath": "/images/4.png",
+        "pagePath": "pages/ticket/ticket",
+        "text": "取票"
+      },
+      {
+        "selectedIconPath": "/images/5-2.png",
+        "iconPath": "/images/5.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom"
+  },
+  
+    
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+
+  
+}

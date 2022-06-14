@@ -1,0 +1,9 @@
+
+<view class="contain-lb">
+<swiper autoplay vertical="ture" indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#e54847" circular="true" interval="2400">
+<swiper-item wx:for="{{swiper}}">
+<image  src="{{item}}"></image>
+</swiper-item>
+
+</swiper>
+</view>

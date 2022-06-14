@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="nav">
+
+<text>成都</text>
+
+<ul>
+<li class="{{currentTab==0?'one':''}}" data-current='0' bindtap="showTab">热映</li>
+<li class="{{currentTab==1?'one':''}}" data-current='1' bindtap="showTab">影院</li>
+<li class="{{currentTab==2?'one':''}}" data-current='2' bindtap="showTab">待映</li>
+<li class="{{currentTab==3?'one':''}}" data-current='3' bindtap="showTab">经典电影</li>
+
+</ul>
+<a href="#"><image src="img/ser.png"></image>
+</a>
+</view>
+
+<!-- 热评 -->
+<view class="back"></view>
+<swiper current="{{currentTab}}">
+<swiper-item >
+<view class="tab1">
+<!-- 首页最受好评 -->
+<view class="box1">
+<navigator url="../me/me" open-type="switchTab">
+<text class="hp">最受好评电影</text>
+</navigator>
+<scroll-view scroll-x="true">
+<view wx:for="{{fm}}"><image src="{{item.src}}"></image><text class="fm-text">{{item.tite}}</text></view>
+</scroll-view>
+</view>
+<view class="gray"></view>
+<view wx:for="{{movies}}">
+  <navigator url="../details/details">
+  <view class="contain">
+<view class="flex-a"><image src="{{item.img}}" ></image></view>
+<view class="flex-b">
+<view class="flex-bt">{{item.nm}}</view>
+<view class="flex-pf">观众评 <text> {{item.sc}}</text> </view>
+<view class='flex-zy'>上映时间: {{item.comingTitle}}</view>
+<view class="flex-zy">主演:{{item.star}} </view>
+<view class="flex-xz"> {{item.showInfo}}</view>
+</view>
+<view class="flex-c">
+  <!-- <view class="flex-pf">观众评 <text> {{item.sc}}</text> </view> -->
+<view class="flex-btn"  style="color:white;background-color: {{item.showStateButton.color}} ;">{{item.showStateButton.content}}</view>
+</view>
+</view>
+</navigator>
+</view>
+</view>
+</swiper-item>
+<swiper-item >
+<view class="tab2">
+<view class="select">
+<view style=" height: 1.1rem; border-right: 0.01rem solid #cccccc; ">全城▴</view>
+<view style=" height: 1.1rem; border-right: 0.01rem solid #cccccc; ">品牌▾</view>
+<view>特色▾</view>
+</view>
+<view class="cinema"  wx:for="{{cinema_list}}">
+<view class="cinema-msg">
+<view  class="nm">{{item.nm}}<text class="rmb">{{item.sellPrice}}<text class="t-sm">元起</text></text></view>
+<view class="add">{{item.addr}}</view>
+<view class="icon"><text class="icon-blue">退</text><text class="icon-blue" style="  margin-left: 0.4rem;">改签</text><text class="icon-yellow">小吃</text><text class="icon-yellow">折扣卡</text></view>
+<view class="ts"><text class="icon-card">卡</text>{{item.promotion.cardPromotionTag}}</view>
+</view>
+</view>
+</view>
+</swiper-item>
+<!-- 二号结束 -->
+</swiper>

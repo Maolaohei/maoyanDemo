@@ -1,0 +1,44 @@
+
+.flex-a{
+  width: 49.3%;
+  height: 14rem;
+display: inline-block;
+ border: 1px solid #cccccc;
+ position: relative;
+ z-index: -9;
+}
+
+.title{
+  margin-left:0.3rem ;
+  position: absolute;
+  z-index: 1;
+ bottom: 14rem;
+ width: 90%;
+ color: white;
+ font-size: 0.8rem;
+ top: 9.0rem;
+}
+.title-bo{
+  margin-left:0.3rem ;
+  position: absolute;
+  z-index: 1;
+ bottom: 12rem;
+ color: white;
+ font-size: 0.8rem;
+ height: 0.9rem;
+ top: 12.5rem;
+
+}
+.upCount{
+
+  padding-left: 2rem;
+}
+.title-bo image{
+  
+  margin-RIGHT: 0.2REM;
+  height: 1REM;
+  width: 1REM;
+  vertical-align:-15%;  
+
+}
+
